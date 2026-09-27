@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PYTHON</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    .row.content {height: 450px}
+    
+    
+    .sidenav {
+      padding-top: 70px;
+      background-color: #1d211e;
+      height: 154%;
+    }
+    
+   
+    
+    
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inheritance.html">INHERITANCE</a></li>
+        <li class="active"><a href="#">POLYMORPHISYM</a></li>
+        <li><a href="abstraction.html">ABSTRACTION</a></li>
+        <li><a href="encapsulation.html">ENCAPSULATION</a></li>
+      </ul>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-1 sidenav">
+      <ul class="nav navbar-nav">
+      <p><a href="polymorphisum.html">DEFINITON</a></p>
+      <p><a class="active" href="#">WHY?</a></p>
+      <p><a href="polyexample.html">EXAMPLE</a></p>
+    </ul>
+    </div>
+    <div class="col-sm-10 text-left"> 
+      <h1>Why Python doesn't support polymorphisum</h1>
+      <p style="font-size: 20px">
+If there are multiple methods with the same name in a class or Python script, the method specified in the latter one will override the earlier one. Python does not use function arguments in method signatures, hence method overloading is not supported.</p>
+<p style="font-size: 20px">Method overloading is important to support polymorphisum,but python can't support method overloading</p>
+<h3><b>Over Loading</b></h3>
+<p style="font-size: 20px">In other words, we can say that Method overloading is a concept of Java in which we can create multiple methods of the same name in the same class, and all methods work in different ways. When more than one method of the same name is created in a Class, this type of method is called the Overloaded Method.</p>
+<h3><b>Why python doesn't support method overloading</b></h3>
+<p style="font-size: 20px">Python does not support function overloading. An error gets thrown if we implement the function overloading code the way we do in other languages. The reason is as Python does not have a data type for method parameters.</p>
+    </div>
+  </div>
+</div>
+     
+  
+   
+    
+  </div>
+</div>
+</body>
+</html>

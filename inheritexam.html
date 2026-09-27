@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PYTHON</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    .row.content {height: 450px}
+    
+    
+    .sidenav {
+      padding-top: 70px;
+      background-color: #1d211e;
+      height: 880%;
+    }
+    
+   
+    
+    
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">INHERITANCE</a></li>
+        <li><a href="polymorphisum.html">POLYMORPHISYM</a></li>
+        <li><a href="abstraction.html">ABSTRACTION</a></li>
+        <li><a href="encapsulation.html">ENCAPSULATION</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-1 sidenav">
+      <ul class="nav navbar-nav">
+        <P><a href="inheritance.html">DEFINITION</a></P>
+        <P><a href="inheritancetypes.html">TYPES</a></P>
+        <P><a class="active" href="#">EXAMPLE</a></P>
+      </ul>
+    </div>
+    <div class="col-sm-11 text-left"> 
+      <h1>EXAMPLES OF INHERITANCE</h1>
+      <h4><b>Single Inheritence</b></h4>
+      <pre style="font-size: 20px">class Parent:
+    def func1(self):
+        print("This function is in parent class.")
+ 
+# Derived class
+ 
+ 
+class Child(Parent):
+    def func2(self):
+        print("This function is in child class.")
+ 
+ 
+# Driver's code
+object = Child()
+object.func1()
+object.func2()</pre>
+<h4><b>Output</b></h3>
+<pre style="font-size: 20px">This function is in parent class.
+This function is in child class.</pre>
+<h4><b>Multiple Inheritence</b></h4>
+<pre style="font-size: 20px">class Mammal:<br>
+    def mammal_info(self):<br>
+        print("Mammals can give direct birth.")<br>
+
+class WingedAnimal:<br>
+    def winged_animal_info(self):<br>
+        print("Winged animals can flap.")<br>
+
+class Bat(Mammal, WingedAnimal):<br>
+    pass<br>
+
+# create an object of Bat class<br>
+b1 = Bat()<br>
+
+b1.mammal_info()<br>
+b1.winged_animal_info()<br></pre>
+<p style="font-size: 20px"><b>output</b></p>
+<pre style="font-size: 20px">Mammals can give direct birth.<br>
+Winged animals can flap.<br></pre>
+<h4><b>Hyrarchi Inheritance</b></h4>
+<pre style="font-size: 20px">class Parent:<br>
+    def func1(self):<br>
+        print("This function is in parent class.")<br>
+ 
+class Child1(Parent):<br>
+    def func2(self):<br>
+        print("This function is in child 1.")<br>
+ 
+ class Child2(Parent):<br>
+    def func3(self):<br>
+        print("This function is in child 2.")<br>
+ 
+object1 = Child1()<br>
+object2 = Child2()<br>
+object1.func1()<br>
+object1.func2()<br>
+object2.func1()<br>
+object2.func3()<br></pre>
+<p style="font-size: 20px"><b>output</b></p>
+
+<pre  style="font-size: 20px">This function is in parent class.<br>
+This function is in child 1.<br>
+This function is in parent class.<br>
+This function is in child 2.<br></pre>
+<h4><b>Multilevel Inheritance</b></h4>
+<pre style="font-size: 20px">class SuperClass:<br>
+    def super_method(self):<br>
+        print("Super Class method called")<nr>
+
+class DerivedClass1(SuperClass):<br>
+    def derived1_method(self):<br>
+        print("Derived class 1 method called")<br>
+
+class DerivedClass2(DerivedClass1):<br>
+    def derived2_method(self):<br>
+        print("Derived class 2 method called")<br>
+
+d2 = DerivedClass2()<br>
+d2.super_method() <br>
+d2.derived1_method()<br>
+d2.derived2_method()<br></pre>
+<p style="font-size: 20px"><b>output</b></p>
+<pre style="font-size: 20px">Super Class method called<br>
+Derived class 1 method called<br></pre>
+    </div>
+    
+</div>
+     
+  
+   
+</body>
+</html>
